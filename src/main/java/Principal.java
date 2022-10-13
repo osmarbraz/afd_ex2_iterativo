@@ -18,10 +18,8 @@ public class Principal {
         int estado_inicial = 0;
         //Armazena o estado final
         int estado_final = 2;
-
         //Armazena o estado atual
         int estado_atual = estado_inicial;
-
         //Armazena o estado próximo
         int estado_proximo = -1;
 
