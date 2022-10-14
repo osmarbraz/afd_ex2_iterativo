@@ -1,6 +1,6 @@
 # AFD Exercício 2
 
-Implementação java iterativo de um AFD que reconhece a linguagem:
+Implementação java iterativo de um Autômato Finito Determinístico(AFD) que reconhece a linguagem:
 
 L = {w &isin; {a,b}* | w possui o prefixo **a** um quantidade qualquer de **b** e o sufixo com **a**}
 - Ex.: aba, abba, abbba, abbbba, .... 
