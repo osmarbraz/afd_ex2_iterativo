@@ -26,8 +26,8 @@ public class Principal {
         //Indice da letra da entrada
         int i = 0;
 
-        //Enquando não chegou no final da entrada e diferente do estado final
-        while ((i < entrada.length()) && (estado_atual != estado_final)) {
+        //Enquando não chegou no final da entrada
+        while (i < entrada.length()) {
 
             //Recupera um caracter
             char avaliar = entrada.charAt(i);
@@ -41,14 +41,15 @@ public class Principal {
             if (estado_atual == 1 && avaliar == 'b') {
                 estado_proximo = 1;
             }
-            // Estado 1 para 2 (Estado final)
+            // Estado 1 para 2
             if (estado_atual == 1 && avaliar == 'a') {
-                //Se chegou no final da entrada
-                if (i + 1 == entrada.length()) {
-                    estado_proximo = 2;
-                } else {
-                    estado_proximo = -1;
-                    break;
+                estado_proximo = 2;
+            }            
+            // Estado 2 (Estado final)
+            if (estado_atual == 2 ) {                
+                //Se tem caracteres a avaliar
+                if (i < entrada.length()) {
+                    estado_proximo = -1;                    
                 }
             }
             // Atualiza o estado atual
